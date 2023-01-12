@@ -1,0 +1,99 @@
+/*
+Theme Name: Theme enfant Vantage
+Description: Theme enfant Vantage pour Planty
+Author: JG
+Author URI: 
+Template: vantage 
+Version: 0.1.0
+*/
+
+body.responsive #page-wrapper {
+    max-width: 1440px;
+}
+
+/* menu en flex pour changer l'ordre*/
+.main-navigation ul  {
+    display: flex;
+    text-align: center;
+  
+}
+
+/*marges du menu*/
+.main-navigation ul li a {
+    padding: 33px;
+}
+
+/*personnalisation dernier élément*/
+.main-navigation ul li:nth-child(2) a {
+    color:#ffffff;
+    background: #dc9f96;
+    width: 235px;
+   
+}
+
+/*attribution de l'ordre à l'élément "commander"*/
+.main-navigation ul li:nth-child(2)  {
+    order: 1;
+    
+ }
+
+.main-navigation ul li:nth-child(3) a {
+    padding-right: 55px;
+    padding-left: 55px;
+}
+
+/* alignement,centrage, mise en forme mentions legales*/
+.custom-html-widget {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    
+}
+
+.custom-html-widget a {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+/*bouton formulaire nous rencontrer*/
+.button-form {
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+
+}
+
+a.button,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background: #e0b9b4;
+    border: none;
+}
+
+/* classe rajoutée dans customizeur (avancé) pour placement 
+fleur derriere formulaire nous rencontrer*/
+.fleur img.wp-block-cover__image-background.wp-image-87  {
+    width: auto;
+    height: auto;
+    margin-left: -105px;
+    margin-top: 250px;
+}
+
+
+
+#main {
+    padding: 0;
+}
+
+#colophon {
+    padding: 0;
+}
+
+#colophon div img{
+    background-color: #ece2da;
+}
+
