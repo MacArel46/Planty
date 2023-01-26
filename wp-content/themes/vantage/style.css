@@ -4,7 +4,7 @@ Author: SiteOrigin
 Author URI: https://siteorigin.com/
 Theme URI: https://siteorigin.com/theme/vantage/
 Description: Vantage is a flexible multipurpose theme. Its strength lies in its tight integration with some powerful plugins like Page Builder for responsive page layouts, Smart Slider 3 for big beautiful sliders and WooCommerce to help you sell online. Vantage is fully responsive and retina ready. Use it to start a business site, portfolio or online store. We offer free support on our <a href="https://siteorigin.com/thread/">forum</a> (https://siteorigin.com/thread/).
-Version: 1.20.6
+Version: 1.20.7
 Tested up to: 6.1
 Requires at least: 4.7
 Requires PHP: 5.6.20
@@ -784,9 +784,6 @@ body.sidebar-position-none #secondary {
 /* =Responsive Layout
 ----------------------------------------------- */
 @media (max-width: 1080px) {
-  body.responsive #masthead .hgroup {
-    display: block;
-  }
   body.responsive #masthead .hgroup .logo img,
   body.responsive #masthead .hgroup .custom-logo {
     /* Scale down the logo if necessary */
@@ -806,6 +803,7 @@ body.sidebar-position-none #secondary {
   }
 }
 #masthead.force-responsive .hgroup {
+  display: block;
   text-align: center;
 }
 #masthead.force-responsive .hgroup .logo {
@@ -838,9 +836,16 @@ body.sidebar-position-none #secondary {
   margin: 0 auto;
   float: none;
 }
+#masthead.force-responsive .hgroup #header-sidebar > .widget {
+  margin-bottom: 1.25em;
+}
+#masthead.force-responsive .hgroup #header-sidebar > .widget:last-of-type {
+  margin-bottom: 0;
+}
 /* We consider 680px to be mobile resolution */
 @media (max-width: 680px) {
   body.responsive #masthead .hgroup {
+    display: block;
     text-align: center;
   }
   body.responsive #masthead .hgroup .logo {
@@ -872,6 +877,12 @@ body.sidebar-position-none #secondary {
     display: block;
     margin: 0 auto;
     float: none;
+  }
+  body.responsive #masthead .hgroup #header-sidebar > .widget {
+    margin-bottom: 1.25em;
+  }
+  body.responsive #masthead .hgroup #header-sidebar > .widget:last-of-type {
+    margin-bottom: 0;
   }
   body.responsive #primary,
   body.responsive #secondary {
@@ -919,10 +930,11 @@ body.responsive.layout-full #page-wrapper .full-container {
 /* =Menu
 ----------------------------------------------- */
 .main-navigation {
-  margin: 0 -35px;
   background: #343538;
-  position: relative;
+  clear: both;
   font-size: 0;
+  margin: 0 -35px;
+  position: relative;
   z-index: 1499;
   /* Font awesome icons */
   /* General menu link styling */

@@ -42,6 +42,11 @@ body.responsive #page-wrapper {
     padding-left: 55px;
 }
 
+/* largeur du menu haut*/
+body.sticky-menu.layout-boxed .main-navigation {
+    max-width: 1440px;
+}
+
 /* alignement,centrage, mise en forme mentions legales*/
 .custom-html-widget {
     display: flex;
@@ -74,16 +79,47 @@ input[type="submit"] {
     border: none;
 }
 
-/* classe rajoutée dans customizeur (avancé) pour placement 
+/* classe rajoutée dans customiseur (avancé) pour placement 
 fleur derriere formulaire nous rencontrer*/
 .fleur img.wp-block-cover__image-background.wp-image-87  {
     width: auto;
     height: auto;
-    margin-left: -105px;
-    margin-top: 240px;
+    margin-left: -73px;
+    margin-top: 260px;
+    
+}
+
+/*couleur bloc formulaire*/
+
+.wp-block-cover .wp-block-cover__inner-container {
+  
+    color: #000000;
+    margin-bottom: 10px;
+
 }
 
 
+/* marges bloc home*/
+.entry-content > div[class^='wp-block-'] {
+    margin-bottom: 0;
+}
+
+.right{
+    margin-left: -150px;
+}
+
+/* formulaire commande*/
+ body .is-layout-flex {
+    margin-bottom: 0;
+}
+
+.commande .wp-block-separator {
+    border: 0;
+}
+
+.commande hr{
+    background-color: #ffffff ;
+}
 
 #main {
     padding: 0;

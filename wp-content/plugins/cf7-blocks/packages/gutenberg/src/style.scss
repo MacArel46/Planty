@@ -1,0 +1,60 @@
+/** Base Styles **/
+@import "node_modules/@wordpress/base-styles/colors";
+@import "node_modules/@wordpress/base-styles/variables";
+@import "node_modules/@wordpress/base-styles/mixins";
+@import "node_modules/@wordpress/base-styles/breakpoints";
+@import "node_modules/@wordpress/base-styles/animations";
+@import "node_modules/@wordpress/base-styles/z-index";
+@import "node_modules/@wordpress/base-styles/default-custom-properties";
+@import "./components/branding/style.scss";
+@import "./components/welcome-guide/style.scss";
+
+#wpbody-content {
+	padding-bottom: 0 !important;
+}
+
+
+.cf7-blockeditor-root {
+	height: 100vh;
+
+	& > div,
+	.iso-editor {
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.iso-editor {
+
+		& > div + div {
+			height: 100%;
+		}
+
+		.edit-post-layout {
+			height: 100%;
+		}
+	}
+}
+
+#wpcontent {
+	padding-left: 0 !important;
+}
+
+html.is-fullscreen-mode {
+
+	#wpcontent {
+		padding-left: 0 !important;
+	}
+
+	.iso-editor {
+		position: fixed;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+	}
+}
+
+
+.edit-post-header-toolbar__left {
+	padding-left: 0;
+}

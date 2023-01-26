@@ -1,0 +1,44 @@
+.wp-block-cf7-blocks-selection-base {
+
+	.cf7blocks-selection-base-select-block {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.cf7blocks-selection-base-main-label-wrapper {
+		display: flex;
+
+		.cf7blocks-selection-base-main-label {
+			display: block;
+		}
+	}
+
+	&:not(.cf7-block-selection-field-editing) {
+
+		.cf7blocks-selection-field-preview {
+			display: inline-block;
+			margin: 0 0 0 1em;
+		}
+	}
+
+	&.cf7-block-selection-field-editing {
+
+		.cf7blocks-selection-field {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			max-width: 100%;
+			grid-gap: 6px;
+			margin-bottom: 5px;
+
+			.components-base-control {
+				width: 100%;
+				max-width: 100%;
+
+				.components-base-control__field {
+					margin-bottom: 0 !important;
+				}
+			}
+		}
+	}
+}

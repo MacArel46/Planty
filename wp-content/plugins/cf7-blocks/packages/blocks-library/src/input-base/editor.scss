@@ -1,0 +1,11 @@
+.wp-block-cf7-blocks-input-base {
+
+	input,
+	textarea {
+		pointer-events: none;
+	}
+
+	.cf7blocks-selection-base-main-label-wrapper {
+		display: flex;
+	}
+}

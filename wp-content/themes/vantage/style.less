@@ -654,7 +654,6 @@ body.sidebar-position-none #secondary {
 	body.responsive {
 		#masthead {
 			.hgroup {
-				display: block;
 				.logo img,
 				.custom-logo {
 					/* Scale down the logo if necessary */
@@ -689,6 +688,7 @@ body.sidebar-position-none #secondary {
 
 .responsive-group() {
 	.hgroup {
+		display: block;
 		text-align: center;
 
 		.logo {
@@ -719,10 +719,18 @@ body.sidebar-position-none #secondary {
 			padding-bottom: 0 !important;
 			height: auto;
 
-			.widget{
+			.widget {
 				display: block;
 				margin: 0 auto;
 				float: none;
+			}
+
+			> .widget {
+				margin-bottom: 1.25em;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
@@ -808,10 +816,11 @@ body.responsive {
 ----------------------------------------------- */
 	
 .main-navigation {
-	margin: 0 -35px;
 	background: #343538;
-	position: relative;
+	clear: both;
 	font-size: 0;
+	margin: 0 -35px;
+	position: relative;
 	z-index: 1499;
 
 	/* Font awesome icons */
