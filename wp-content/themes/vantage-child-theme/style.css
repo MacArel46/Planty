@@ -108,11 +108,30 @@ fleur derriere formulaire nous rencontrer*/
     margin-left: -150px;
 }
 
-/* formulaire commande*/
+/* police home h1 */
+#content .home-title{
+    line-height: 50px;
+    margin-top: 80px;
+    font-size: 50px !important;
+}
+
+/* home plants*/
+.home-plant{
+    background-image: url(http://planty.local/wp-content/uploads/2023/01/plant-left.png),
+    url(http://planty.local/wp-content/uploads/2023/01/plant-right.png)    ;
+    background-repeat: no-repeat,no-repeat;
+    background-position: 33%,67%;
+    background-position-y: 75%;
+}
+
+
+
+/* formulaire commande marge nombres*/
  body .is-layout-flex {
     margin-bottom: 0;
 }
 
+/* formulaire commande couleur separateur*/
 .commande .wp-block-separator {
     border: 0;
 }
@@ -120,6 +139,28 @@ fleur derriere formulaire nous rencontrer*/
 .commande hr{
     background-color: #ffffff ;
 }
+
+/* form commande blocs infos left et right*/
+.form-infos-left {
+    color: #ffffff;
+}
+
+.form-infos-right {
+    color: #ffffff;
+    margin-left: 45px;
+}
+
+.form-infos-left label{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-infos-right label{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
 
 #main {
     padding: 0;
