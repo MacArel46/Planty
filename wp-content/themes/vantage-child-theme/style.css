@@ -62,13 +62,7 @@ body.sticky-menu.layout-boxed .main-navigation {
 
 }
 
-/*bouton formulaire nous rencontrer*/
-.button-form {
-    margin: auto;
-    display: block;
-    border-radius: 5px;
 
-}
 
 a.button,
 button,
@@ -77,25 +71,6 @@ input[type="reset"],
 input[type="submit"] {
     background: #e0b9b4;
     border: none;
-}
-
-/* classe rajoutée dans customiseur (avancé) pour placement 
-fleur derriere formulaire nous rencontrer*/
-.fleur img.wp-block-cover__image-background.wp-image-87  {
-    width: auto;
-    height: auto;
-    margin-left: -73px;
-    margin-top: 260px;
-    
-}
-
-/*couleur bloc formulaire*/
-
-.wp-block-cover .wp-block-cover__inner-container {
-  
-    color: #000000;
-    margin-bottom: 10px;
-
 }
 
 
@@ -117,50 +92,182 @@ fleur derriere formulaire nous rencontrer*/
 
 /* home plants*/
 .home-plant{
-    background-image: url(http://planty.local/wp-content/uploads/2023/01/plant-left.png),
-    url(http://planty.local/wp-content/uploads/2023/01/plant-right.png)    ;
+    background-image: url(/wp-content/uploads/2023/01/plant-left.png),
+    url(/wp-content/uploads/2023/01/plant-right.png)    ;
     background-repeat: no-repeat,no-repeat;
     background-position: 33%,67%;
     background-position-y: 75%;
 }
 
 
+/*bloc ce qu'ils en pensent*/
+#main .home-ceq{
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/* NOUS RENCONTRER*/
+
+/* classe rajoutée dans customiseur (avancé) pour placement 
+fleur derriere formulaire nous rencontrer*/
+.fleur img.wp-block-cover__image-background.wp-image-87  {
+    width: auto;
+    height: auto;
+    margin-left: -73px;
+    margin-top: 350px;
+    
+}
+
+.title-nousrenc{
+    margin-top: 80px !important;
+}
+
+.title-nouscont{
+    margin-bottom: -10px !important;
+}
+
+/*couleur bloc formulaire*/
+
+.wp-block-cover .wp-block-cover__inner-container {
+  
+    color: #000000;
+    margin-bottom: 10px;
+
+}
+
+/*input formulaire*/
+.input-form input{
+    height: 70px;
+    border-radius: 8px;
+}
+
+.input-form label{
+    margin-bottom: 10px;
+}
+
+/*message*/
+.msg-form textarea{
+    border-radius: 8px;
+}
+
+/*bouton formulaire envoyer*/
+.button-form input {
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    height: 55px;
+    width: 200px;
+
+}
+
+/*COMMANDER*/
+
+/*Votre commande*/
+.form-votrecde {
+    margin-top: 0 !important;
+}
 
 /* formulaire commande marge nombres*/
  body .is-layout-flex {
     margin-bottom: 0;
+
+   
 }
 
-/* formulaire commande couleur separateur*/
-.commande .wp-block-separator {
+/* formulaire commande separateur*/
+
+.separ{
     border: 0;
-}
-
-.commande hr{
     background-color: #ffffff ;
 }
 
 /* form commande blocs infos left et right*/
+.form-infos-left, .form-infos-right {
+    color: #ffffff;
+}
+
+
+.form-infos-left label, .form-infos-right label{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.form-infos-left .wp-block-cf7-blocks-input-base input, .form-infos-right .wp-block-cf7-blocks-input-base input{
+    min-height: 70px;
+}
+
+
+/*   separation centrale*/
 .form-infos-left {
-    color: #ffffff;
+    border-right: 1px #fff solid;
+    padding-right: 45px;
 }
 
-.form-infos-right {
-    color: #ffffff;
-    margin-left: 45px;
+.form-infos-right{
+    padding-left: 45px;
+}
+.form-infos-left .has-text-align-left{
+    margin-top: 10px;
 }
 
-.form-infos-left label{
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.form-infos-right label{
-    font-size: 12px;
-    font-weight: 400;
+.form-infos-right .has-text-align-left{
+    margin-top: 10px;
 }
 
 
+.btn-cde input {
+    color: #fff;
+    height: 55px;
+    width: 200px;
+}
+
+/*images*/
+.wp-block-columns.is-layout-flex {
+    gap:0;
+    margin: 0px;
+}
+
+.form-img {
+    width: 192px;
+    height: 130px;
+    margin-left: 8px;
+  
+}
+
+/*compteurs*/
+.btn-count input{
+    height: 55px;
+    max-width: 80px;
+    margin-left: 8px;
+}
+
+.form-nombres button {
+    height: 55px;
+    width: 100px;
+    color: #fff;
+}
+ 
+.form-btns  {
+      
+    width: 200px;
+    margin-left: 5px;
+}
+
+/*boutton commander*/
+.btn-cde{
+    width:15em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 25px !important;
+}
+
+/*texte envoi formulaire*/
+.wpcf7-response-output{
+    color: rgb(7, 0, 0);
+  
+}
 
 #main {
     padding: 0;
@@ -174,3 +281,58 @@ fleur derriere formulaire nous rencontrer*/
     background-color: #ece2da;
 }
 
+@media (max-width: 1024px) {
+    /*HOME*/
+    #content .home-title {
+        font-size: 38px !important;
+    }
+    
+    
+    /*COMMANDER*/
+    
+
+    .form-infos-left {
+        border-right: 0;
+        padding-right: 0px;
+    }
+
+    .form-btns  {
+      
+        width: 200px;
+       
+    }
+
+    
+
+
+} 
+
+@media (max-width: 380px) {
+
+    /*COMMANDER*/
+    body .is-layout-flex {
+            
+        flex-direction: column;
+     }
+
+     
+    .form-nombres{
+        text-align: center;
+        align-content: center;
+     }
+
+     .wp-block-columns.is-layout-flex  {
+      
+        margin-bottom: 25px;
+    }
+
+    .form-infos-right{
+        padding-left: 0;
+    }
+
+
+
+
+
+
+}

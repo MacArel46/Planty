@@ -34,4 +34,4 @@
 
 </footer><!-- #colophon .site-footer -->
 
-<!-- pour le footer créer un widget ; s'inspirer de adnpme.com/formation-wordpress/creation-widgets 
+
